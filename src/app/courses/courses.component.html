@@ -9,6 +9,7 @@
 </div>
 
 <ng-container *ngFor="let course of courses">
+  <!-- courseCountRadioButton === 'All' || courseCountRadioButton === course.type -->
   <div
     class="course-container"
     *ngIf="searchText === '' || course.name.toLowerCase().includes(searchText)"
